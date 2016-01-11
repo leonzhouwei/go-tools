@@ -56,16 +56,17 @@ echo "go get -u github.com/opennota/check done"
 #go get -u github.com/alecthomas/gometalinter
 #echo "go get -u github.com/alecthomas/gometalinter done"
 
-echo "----------------------------------------------------------------------"
-go get -u github.com/dvyukov/go-fuzz
-echo "go get -u github.com/dvyukov/go-fuzz done"
+#echo "----------------------------------------------------------------------"
+#go get -u github.com/dvyukov/go-fuzz
+#echo "go get -u github.com/dvyukov/go-fuzz done"
 
 echo "----------------------------------------------------------------------"
 go get -u github.com/bradfitz/goimports
 echo "go get -u github.com/bradfitz/goimports done"
 
 echo "----------------------------------------------------------------------"
-echo "all done"
+echo "all done -: )"
+
+echo ""
 
 exit 0
-
