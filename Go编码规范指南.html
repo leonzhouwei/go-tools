@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script charset="utf-8" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/id.php"></script><script charset="utf-8" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/shares.php"></script>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Go编码规范指南 - name</title>
+<meta name="_xsrf" content="uvZWknOeTiqC8huzM2NVasC18S2N056J">
+<link rel="shortcut icon" href="http://golanghome.com/static/image/favicon.png">
+<script>/* Beego Compress Powered */</script>
+	<link rel="stylesheet" href="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/lib.css">
+
+<script>/* Beego Compress Powered */</script>
+	<link rel="stylesheet" href="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/fileinput.css">
+
+<script>/* Beego Compress Powered */</script>
+	<link rel="stylesheet" href="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/simditor.css">
+
+
+<script>/* Beego Compress Powered */</script>
+	<script type="text/javascript" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/lib.js"></script>
+
+<script>/* Beego Compress Powered */</script>
+	<script type="text/javascript" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/fileinput.js"></script>
+
+<script>/* Beego Compress Powered */</script>
+	<script type="text/javascript" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/simditor.js"></script>
+
+	
+</head>
+<body id="front"><link type="text/css" rel="stylesheet" href="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/jiathis_counter.css"><link type="text/css" rel="stylesheet" href="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/jiathis_share.css"><iframe style="position: fixed; display: none; opacity: 0;" frameborder="0"></iframe><div style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;" class="jiathis_style"></div><div style="position: absolute; z-index: 1000000000; display: none; overflow: auto;" class="jiathis_style"></div><iframe src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/jiathis_utility.html" style="display: none;" frameborder="0"></iframe>
+	<div id="wrapper">
+		
+    <nav id="navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo" href="http://golanghome.com/">
+                <img src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/logo.png">
+            </a>
+        </div>
+        <form id="navbar-search" class="navbar-form navbar-left" role="search" action="http://golanghome.com/search" method="GET">
+            <div class="form-group">
+                <input class="form-control search-box" placeholder="search" name="q" id="st-search-input" type="text">
+            </div>
+        </form>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="http://golanghome.com/">home</a></li>
+                
+                    
+                        <li><a href="http://golanghome.com/category/forum">问答</a></li>
+                    
+                        <li><a href="http://golanghome.com/category/share">分享</a></li>
+                    
+                        <li><a href="http://golanghome.com/category/opensource">开源</a></li>
+                    
+                        <li><a href="http://golanghome.com/category/column">专栏</a></li>
+                    
+                        <li><a href="http://golanghome.com/category/community">社区</a></li>
+                    
+                        <li><a href="http://golanghome.com/category/other">其他</a></li>
+                    
+                
+            </ul>
+            
+            
+            <div class="nav navbar-nav navbar-right">
+                <a class="btn btn-sm btn-success navbar-btn" href="http://golanghome.com/signup">signup</a>
+                <a class="btn btn-sm btn-primary navbar-btn" style="margin-right:10px;" href="http://golanghome.com/login">login</a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+
+
+		<div id="main" class="container">
+			
+<div class="row">
+    <div id="content" class="col-md-8 col-md-offset-1">
+        <ol class="breadcrumb">
+            <li><a href="http://golanghome.com/"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="http://golanghome.com/topic/codeshare">代码</a></li>
+        </ol>
+
+        <div class="post-show">
+            <div class="post-head">
+                <div class="media">
+                    <div class="media-body">
+                        <h1 class="media-heading title">
+                            <span id="post-fav-tag" class="glyphicon glyphicon-bookmark" style="display:none;"></span>
+                            <span id="post-best-tag" class="best">Go编码规范指南</span>
+                            <input value="http://golanghome.com/post/fav/550" id="toggle-fav-post-url" type="hidden">
+                            
+                        </h1>
+                        <div class="meta">
+                            <a href="http://golanghome.com/user/astaxie">astaxie</a>
+                            <span class="sep">•</span>
+                            <span class="time">post_at2014-12-01</span>
+                            
+                                
+                                <span class="sep">•</span>
+                                        <span class="last-reply">last_reply
+                                        <a href="http://golanghome.com/user/makoshan">makoshan</a></span>
+                                <span class="sep">•</span>
+                                <span class="time">months_ago%!(EXTRA int=7)</span>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="http://golanghome.com/user/astaxie" title="astaxie">
+                            <img class="large" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FttABai3PedbIsozC34dlWw0WVUA_002.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-action clearfix">
+                <div class="btn-group btn-group-xs pull-left">
+                    
+                    <a href="http://golanghome.com/login?to=http%3a%2f%2fgolanghome.com%2fpost%2f550" class="btn btn-success btn-xs">
+                        <span class="glyphicon glyphicon-heart"></span>&nbsp;fav_post</a>
+                    
+                </div>
+                <div class="pull-right">
+                    
+                    <div class="jiathis_style">
+                        <a title="分享到QQ空间" class="jiathis_button_qzone"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+                        <a title="分享到新浪微博" class="jiathis_button_tsina"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                        <a title="分享到腾讯微博" class="jiathis_button_tqq"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+                        <a title="分享到微信" class="jiathis_button_weixin"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+                        <a title="分享到人人网" class="jiathis_button_renren"><span class="jiathis_txt jtico jtico_renren"></span></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        <a class="jiathis_counter_style"><span title="累计分享6次" id="jiathis_counter_23" class="jiathis_button_expanded jiathis_counter jiathis_bubble_style">6</span></a>
+                    </div>
+                    <script type="text/javascript" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/jia.js" charset="utf-8"></script><script type="text/javascript" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/plugin.js" charset="utf-8"></script>
+                    
+                </div>
+            </div>
+
+            <div class="post-content markdown">
+                <h1>Go编码规范指南</h1>
+
+<h2>序言</h2>
+
+<p>看过很多方面的编码规范，可能每一家公司都有不同的规范，这份编码规范是写给我自己的，同时希望我们公司内部同事也能遵循这个规范来写Go代码。</p>
+
+<p>如果你的代码没有办法找到下面的规范，那么就遵循标准库的规范，多阅读标准库的源码，标准库的代码可以说是我们写代码参考的标杆。</p>
+
+<h2>格式化规范</h2>
+
+<p>go默认已经有了gofmt工具，但是我们强烈建议使用goimport工具，这个在gofmt的基础上增加了自动删除和引入包.</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">go </span><span class="kwd">get</span><span class="pln"> golang</span><span class="pun">.</span><span class="pln">org</span><span class="pun">/</span><span class="pln">x</span><span class="pun">/</span><span class="pln">tools</span><span class="pun">/</span><span class="pln">cmd</span><span class="pun">/</span><span class="pln">goimports</span></code></pre>
+
+<p>不同的编辑器有不同的配置, sublime的配置教程：<a href="http://michaelwhatcott.com/gosublime-goimports/" rel="nofollow">http://michaelwhatcott.com/gosublime-goimports/</a></p>
+
+<p>LiteIDE默认已经支持了goimports，如果你的不支持请点击属性配置-&gt;golangfmt-&gt;勾选goimports</p>
+
+<p>保存之前自动fmt你的代码。</p>
+
+<h2>行长约定</h2>
+
+<p>一行最长不超过80个字符，超过的请使用换行展示，尽量保持格式优雅。</p>
+
+<h2>go vet</h2>
+
+<p>vet工具可以帮我们静态分析我们的源码存在的各种问题，例如多余的代码，提前return的逻辑，struct的tag是否符合标准等。</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">go </span><span class="kwd">get</span><span class="pln"> golang</span><span class="pun">.</span><span class="pln">org</span><span class="pun">/</span><span class="pln">x</span><span class="pun">/</span><span class="pln">tools</span><span class="pun">/</span><span class="pln">cmd</span><span class="pun">/</span><span class="pln">vet</span></code></pre>
+
+<p>使用如下：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">go vet </span><span class="pun">.</span></code></pre>
+
+<h2>package名字</h2>
+
+<p>保持package的名字和目录保持一致，尽量采取有意义的包名，简短，有意义，尽量和标准库不要冲突。</p>
+
+<h2>import 规范</h2>
+
+<p>import在多行的情况下，goimports会自动帮你格式化，但是我们这里还是规范一下import的一些规范，如果你在一个文件里面引入了一个package，还是建议采用如下格式：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="kwd">import</span><span class="pln"> </span><span class="pun">(</span><span class="pln">
+    </span><span class="str">"fmt"</span><span class="pln">
+</span><span class="pun">)</span></code></pre>
+
+<p>如果你的包引入了三种类型的包，标准库包，程序内部包，第三方包，建议采用如下方式进行组织你的包：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="kwd">import</span><span class="pln"> </span><span class="pun">(</span><span class="pln">
+    </span><span class="str">"encoding/json"</span><span class="pln">
+    </span><span class="str">"strings"</span><span class="pln">
+
+    </span><span class="str">"myproject/models"</span><span class="pln">
+    </span><span class="str">"myproject/controller"</span><span class="pln">
+    </span><span class="str">"myproject/utils"</span><span class="pln">
+
+    </span><span class="str">"github.com/astaxie/beego"</span><span class="pln">
+    </span><span class="str">"github.com/go-sql-driver/mysql"</span><span class="pln">
+</span><span class="pun">)</span><span class="pln">   </span></code></pre>
+
+<p>有顺序的引入包，不同的类型采用空格分离，第一种实标准库，第二是项目包，第三是第三方包。</p>
+
+<p>在项目中不要使用相对路径引入包：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="com">// 这是不好的导入</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="pun">“../</span><span class="pln">net</span><span class="pun">”</span><span class="pln">
+
+</span><span class="com">// 这是正确的做法</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="pun">“</span><span class="pln">github</span><span class="pun">.</span><span class="pln">com</span><span class="pun">/</span><span class="pln">repo</span><span class="pun">/</span><span class="pln">proj</span><span class="pun">/</span><span class="pln">src</span><span class="pun">/</span><span class="pln">net</span><span class="pun">”</span></code></pre>
+
+<h2>变量申明</h2>
+
+<p>变量名采用驼峰标准，不要使用<code>_</code>来命名变量名，多个变量申明放在一起</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="kwd">var</span><span class="pln"> </span><span class="pun">(</span><span class="pln">
+    </span><span class="typ">Found</span><span class="pln"> </span><span class="kwd">bool</span><span class="pln">
+    count </span><span class="kwd">int</span><span class="pln">
+</span><span class="pun">)</span></code></pre>
+
+<p>在函数外部申明必须使用var,不要采用<code>:=</code>，容易踩到变量的作用域的问题。</p>
+
+<h2>自定义类型的string循环问题</h2>
+
+<p>如果自定义的类型定义了String方法，那么在打印的时候会产生隐藏的一些bug</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">type </span><span class="typ">MyInt</span><span class="pln"> </span><span class="kwd">int</span><span class="pln">
+func </span><span class="pun">(</span><span class="pln">m </span><span class="typ">MyInt</span><span class="pun">)</span><span class="pln"> </span><span class="typ">String</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">string</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> 
+    </span><span class="kwd">return</span><span class="pln"> fmt</span><span class="pun">.</span><span class="typ">Sprint</span><span class="pun">(</span><span class="pln">m</span><span class="pun">)</span><span class="pln">   </span><span class="com">//BUG:死循环</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+func</span><span class="pun">(</span><span class="pln">m </span><span class="typ">MyInt</span><span class="pun">)</span><span class="pln"> </span><span class="typ">String</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">string</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> 
+    </span><span class="kwd">return</span><span class="pln"> fmt</span><span class="pun">.</span><span class="typ">Sprint</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">(</span><span class="pln">m</span><span class="pun">))</span><span class="pln">   </span><span class="com">//这是安全的,因为我们内部进行了类型转换</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<h2>避免返回命名的参数</h2>
+
+<p>如果你的函数很短小，少于10行代码，那么可以使用，不然请直接使用类型，因为如果使用命名变量很<br>
+容易引起隐藏的bug</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">func </span><span class="typ">Foo</span><span class="pun">(</span><span class="pln">a </span><span class="kwd">int</span><span class="pun">,</span><span class="pln"> b </span><span class="kwd">int</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">string</span><span class="pun">,</span><span class="pln"> ok</span><span class="pun">){</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+
+<p>当然如果是有多个相同类型的参数返回，那么命名参数可能更清晰：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">func </span><span class="pun">(</span><span class="pln">f </span><span class="pun">*</span><span class="typ">Foo</span><span class="pun">)</span><span class="pln"> </span><span class="typ">Location</span><span class="pun">()</span><span class="pln"> </span><span class="pun">(</span><span class="pln">float64</span><span class="pun">,</span><span class="pln"> float64</span><span class="pun">,</span><span class="pln"> error</span><span class="pun">)</span></code></pre>
+
+<p>下面的代码就更清晰了：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="com">// Location returns f's latitude and longitude.</span><span class="pln">
+</span><span class="com">// Negative values mean south and west, respectively.</span><span class="pln">
+func </span><span class="pun">(</span><span class="pln">f </span><span class="pun">*</span><span class="typ">Foo</span><span class="pun">)</span><span class="pln"> </span><span class="typ">Location</span><span class="pun">()</span><span class="pln"> </span><span class="pun">(</span><span class="pln">lat</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">long</span><span class="pln"> float64</span><span class="pun">,</span><span class="pln"> err error</span><span class="pun">)</span></code></pre>
+
+<h2>错误处理</h2>
+
+<p>错误处理的原则就是不能丢弃任何有返回err的调用，不要采用<code>_</code>丢弃，必须全部处理。接收到错误，要么返回err，要么实在不行就panic，或者使用log记录下来</p>
+
+<h3>error 信息</h3>
+
+<p>error的信息不要采用大写字母，尽量保持你的错误简短，但是要足够表达你的错误的意思。</p>
+
+<h2>长句子打印或者调用，使用参数进行格式化分行</h2>
+
+<p>我们在调用<code>fmt.Sprint</code>或者<code>log.Sprint</code>之类的函数时，有时候会遇到很长的句子，我们需要在参数调用处进行多行分割：</p>
+
+<p>下面是错误的方式：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">log</span><span class="pun">.</span><span class="typ">Printf</span><span class="pun">(“</span><span class="pln">A </span><span class="kwd">long</span><span class="pln"> format </span><span class="kwd">string</span><span class="pun">:</span><span class="pln"> </span><span class="pun">%</span><span class="pln">s </span><span class="pun">%</span><span class="pln">d </span><span class="pun">%</span><span class="pln">d </span><span class="pun">%</span><span class="pln">s</span><span class="pun">”,</span><span class="pln"> myStringParameter</span><span class="pun">,</span><span class="pln"> len</span><span class="pun">(</span><span class="pln">a</span><span class="pun">),</span><span class="pln">
+    expected</span><span class="pun">.</span><span class="typ">Size</span><span class="pun">,</span><span class="pln"> defrobnicate</span><span class="pun">(“</span><span class="typ">Anotherlongstringparameter</span><span class="pun">”,</span><span class="pln">
+        expected</span><span class="pun">.</span><span class="typ">Growth</span><span class="pun">.</span><span class="typ">Nanoseconds</span><span class="pun">()</span><span class="pln"> </span><span class="pun">/</span><span class="lit">1e6</span><span class="pun">))</span></code></pre>
+
+<p>应该是如下的方式：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">log</span><span class="pun">.</span><span class="typ">Printf</span><span class="pun">(</span><span class="pln"> 
+    </span><span class="pun">“</span><span class="pln">A </span><span class="kwd">long</span><span class="pln"> format </span><span class="kwd">string</span><span class="pun">:</span><span class="pln"> </span><span class="pun">%</span><span class="pln">s </span><span class="pun">%</span><span class="pln">d </span><span class="pun">%</span><span class="pln">d </span><span class="pun">%</span><span class="pln">s</span><span class="pun">”,</span><span class="pln"> 
+    myStringParameter</span><span class="pun">,</span><span class="pln">
+    len</span><span class="pun">(</span><span class="pln">a</span><span class="pun">),</span><span class="pln">
+    expected</span><span class="pun">.</span><span class="typ">Size</span><span class="pun">,</span><span class="pln">
+    defrobnicate</span><span class="pun">(</span><span class="pln">
+        </span><span class="pun">“</span><span class="typ">Anotherlongstringparameter</span><span class="pun">”,</span><span class="pln">
+        expected</span><span class="pun">.</span><span class="typ">Growth</span><span class="pun">.</span><span class="typ">Nanoseconds</span><span class="pun">()/</span><span class="lit">1e6</span><span class="pun">,</span><span class="pln"> 
+    </span><span class="pun">),</span><span class="pln">
+</span><span class="pun">）</span><span class="pln">   </span></code></pre>
+
+<h2>注意闭包的调用</h2>
+
+<p>在循环中调用函数或者goroutine方法，一定要采用显示的变量调用，不要再闭包函数里面调用循环的参数</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">fori</span><span class="pun">:=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="pln">limit</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++{</span><span class="pln">
+    go func</span><span class="pun">(){</span><span class="pln"> </span><span class="typ">DoSomething</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> </span><span class="pun">}()</span><span class="pln"> </span><span class="com">//错误的做法</span><span class="pln">
+    go func</span><span class="pun">(</span><span class="pln">i </span><span class="kwd">int</span><span class="pun">){</span><span class="pln"> </span><span class="typ">DoSomething</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> </span><span class="pun">}(</span><span class="pln">i</span><span class="pun">)</span><span class="com">//正确的做法</span><span class="pln">
+</span><span class="pun">￼}</span></code></pre>
+
+<p><a href="http://golang.org/doc/articles/race_detector.html#Race_on_loop_counter" rel="nofollow">http://golang.org/doc/articles/race_detector.html#Race_on_loop_counter</a></p>
+
+<h2>在逻辑处理中禁用panic</h2>
+
+<p>在main包中只有当实在不可运行的情况采用panic，例如文件无法打开，数据库无法连接导致程序无法<br>
+正常运行，但是对于其他的package对外的接口不能有panic，只能在包内采用。</p>
+
+<p>强烈建议在main包中使用log.Fatal来记录错误，这样就可以由log来结束程序。</p>
+
+<h2>注释规范</h2>
+
+<p>注释可以帮我们很好的完成文档的工作，写得好的注释可以方便我们以后的维护。详细的如何写注释可以<br>
+参考：<a href="http://golang.org/doc/effective_go.html#commentary" rel="nofollow">http://golang.org/doc/effective_go.html#commentary</a></p>
+
+<h3>bug注释</h3>
+
+<p>针对代码中出现的bug，可以采用如下教程使用特殊的注释，在godocs可以做到注释高亮：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="com">// BUG(astaxie):This divides by zero. </span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> i </span><span class="kwd">float</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">/</span><span class="lit">0</span></code></pre>
+
+<p><a href="http://blog.golang.org/2011/03/godoc%C2%ADdocumenting%C2%ADgo%C2%ADcode.html" rel="nofollow">http://blog.golang.org/2011/03/godoc­documenting­go­code.html</a></p>
+
+<h2>struct规范</h2>
+
+<h3>struct申明和初始化格式采用多行：</h3>
+
+<p>定义如下：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">type </span><span class="typ">User</span><span class="pln"> </span><span class="kwd">struct</span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">Username</span><span class="pln">  </span><span class="kwd">string</span><span class="pln">
+    </span><span class="typ">Email</span><span class="pln">     </span><span class="kwd">string</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>初始化如下：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">u </span><span class="pun">:=</span><span class="pln"> </span><span class="typ">User</span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">Username</span><span class="pun">:</span><span class="pln"> </span><span class="str">"astaxie"</span><span class="pun">,</span><span class="pln">
+    </span><span class="typ">Email</span><span class="pun">:</span><span class="pln">    </span><span class="str">"astaxie@gmail.com"</span><span class="pun">,</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<h3>recieved是值类型还是指针类型</h3>
+
+<p>到底是采用值类型还是指针类型主要参考如下原则：</p>
+
+<pre style="" class="prettyprint prettyprinted"><code><span class="pln">func</span><span class="pun">(</span><span class="pln">w </span><span class="typ">Win</span><span class="pun">)</span><span class="pln"> </span><span class="typ">Tally</span><span class="pun">(</span><span class="pln">playerPlayer</span><span class="pun">)</span><span class="kwd">int</span><span class="pln">    </span><span class="com">//w不会有任何改变 </span><span class="pln">
+func</span><span class="pun">(</span><span class="pln">w </span><span class="pun">*</span><span class="typ">Win</span><span class="pun">)</span><span class="pln"> </span><span class="typ">Tally</span><span class="pun">(</span><span class="pln">playerPlayer</span><span class="pun">)</span><span class="kwd">int</span><span class="pln">    </span><span class="com">//w会改变数据</span></code></pre>
+
+<p>更多的请参考：<a href="https://code.google.com/p/go-wiki/wiki/CodeReviewComments#Receiver_Type" rel="nofollow">https://code.google.com/p/go-wiki/wiki/CodeReviewComments#Receiver_Type</a></p>
+
+<h3>带mutex的struct必须是指针receivers</h3>
+
+<p>如果你定义的struct中带有mutex,那么你的receivers必须是指针</p>
+
+<h2>参考资料</h2>
+
+<ol>
+<li><a href="https://code.google.com/p/go-wiki/wiki/CodeReviewComments" rel="nofollow">https://code.google.com/p/go-wiki/wiki/CodeReviewComments</a><br></li>
+<li><a href="http://golang.org/doc/effective_go.html" rel="nofollow">http://golang.org/doc/effective_go.html</a><br></li>
+</ol>
+            </div>
+
+            <div class="post-comments">
+                
+                <div class="breadcrumb" style="border-radius: 50%">
+                    <div class="text-center">total_replies%!(EXTRA int64=25)</div>
+                </div>
+                
+                
+                
+                <div id="reply1" class="media comment" data-user="fundon" data-user-nick="fundon" data-floor="1">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/fundon">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FntABHRW7kZ4Kd9o3dhmfiYSUAY1.jpeg" title="fundon" alt="fundon">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/fundon">fundon</a>
+                            <span class="time">2014-12-01</span>
+                        </div>
+                        <div class="markdown">
+                            <p>赞，学习了</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply1" class="floor">1</a>
+                    </div>
+                </div>
+                
+                <div id="reply2" class="media comment" data-user="gopher" data-user-nick="gopher" data-floor="2">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/gopher">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fuz4MzmUyyVe51F0B8H2Sdg7AA_Z.jpeg" title="gopher" alt="gopher">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/gopher">gopher</a>
+                            <span class="time">2014-12-01</span>
+                        </div>
+                        <div class="markdown">
+                            <p>不错 非常好</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply2" class="floor">2</a>
+                    </div>
+                </div>
+                
+                <div id="reply3" class="media comment" data-user="shoyou" data-user-nick="shoyou" data-floor="3">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/shoyou">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fg7-_58y-_3Mi06NYoMAiR9aDOLY.png" title="shoyou" alt="shoyou">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/shoyou">shoyou</a>
+                            <span class="time">2014-12-01</span>
+                        </div>
+                        <div class="markdown">
+                            <p>学习学习，很受用</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply3" class="floor">3</a>
+                    </div>
+                </div>
+                
+                <div id="reply4" class="media comment" data-user="九头蛇龙" data-user-nick="九头蛇龙" data-floor="4">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/snake_dragon">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FlymTX_l_c3dUC1nMD6yr3M63GhE.png" title="九头蛇龙" alt="九头蛇龙">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/snake_dragon">九头蛇龙</a>
+                            <span class="time">2014-12-01</span>
+                        </div>
+                        <div class="markdown">
+                            <p>有好几条都太过僵硬了，很多时候需要反过来这些规矩用</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply4" class="floor">4</a>
+                    </div>
+                </div>
+                
+                <div id="reply5" class="media comment" data-user="九头蛇龙" data-user-nick="九头蛇龙" data-floor="5">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/snake_dragon">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FlymTX_l_c3dUC1nMD6yr3M63GhE.png" title="九头蛇龙" alt="九头蛇龙">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/snake_dragon">九头蛇龙</a>
+                            <span class="time">2014-12-01</span>
+                        </div>
+                        <div class="markdown">
+                            <p>比如 命名返回值那条，我觉得应该改为“即使命名了返回值，也应避免单独使用return，提倡将所有返回值显式写明”</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply5" class="floor">5</a>
+                    </div>
+                </div>
+                
+                <div id="reply6" class="media comment" data-user="mozillazg" data-user-nick="mozillazg" data-floor="6">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/mozillazg">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FkPdIC7lOuGQVAphODOmbr55BUOy.jpeg" title="mozillazg" alt="mozillazg">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/mozillazg">mozillazg</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>关于<code>go vet</code> 工具，如果不是 <code>tip</code> 版的话，会提示找不到 <code>vet</code> 工具。</p>
+
+<p>两种解决办法：</p>
+
+<ul>
+<li>改为通过 <code>go get code.google.com/p/go.tools/cmd/vet</code> 安装<br></li>
+<li>直接使用 <code>vet</code> 命令 而不是 <code>go vet</code> 命令： <code>vet .</code><br></li>
+</ul>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply6" class="floor">6</a>
+                    </div>
+                </div>
+                
+                <div id="reply7" class="media comment" data-user="mozillazg" data-user-nick="mozillazg" data-floor="7">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/mozillazg">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FkPdIC7lOuGQVAphODOmbr55BUOy.jpeg" title="mozillazg" alt="mozillazg">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/mozillazg">mozillazg</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>文章里引号变成全角了。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply7" class="floor">7</a>
+                    </div>
+                </div>
+                
+                <div id="reply8" class="media comment" data-user="darksword" data-user-nick="darksword" data-floor="8">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/darksword">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fg95z2OftzBLsuvKVn18zaHeaLhe.png" title="darksword" alt="darksword">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/darksword">darksword</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>大赞。。。。。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply8" class="floor">8</a>
+                    </div>
+                </div>
+                
+                <div id="reply9" class="media comment" data-user="astaxie" data-user-nick="astaxie" data-floor="9">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/astaxie">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FttABai3PedbIsozC34dlWw0WVUA.jpeg" title="astaxie" alt="astaxie">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/astaxie">astaxie</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#4 @snake_dragon 恩，有好的意见可以留言，我这个只是初稿，还需要不断优化</p>
+
+<p>#6 @mozillazg 这个时间段很尴尬，正处于Go内部搬迁过程。过一点时间就好了。1.4马上就发布了</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply9" class="floor">9</a>
+                    </div>
+                </div>
+                
+                <div id="reply10" class="media comment" data-user="新一" data-user-nick="新一" data-floor="10">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/overlords">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FvIaB1WSvHkfN34Vhlth3duOytyd.jpeg" title="新一" alt="新一">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/overlords">新一</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>必须收藏！</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply10" class="floor">10</a>
+                    </div>
+                </div>
+                
+                <div id="reply11" class="media comment" data-user="huandu" data-user-nick="huandu" data-floor="11">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/huandu">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FvH_YiN3n1xapqyITxzwDAAo19_u.png" title="huandu" alt="huandu">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/huandu">huandu</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>能否稍微详细的解释一下为什么不能使用相对路径来引入包？</p>
+
+<p>如果是一个多人合作的内部项目，使用内部路径需要让所有人都把项目的父目录加入 <code>GOPATH</code>，似乎还多了些麻烦呢。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply11" class="floor">11</a>
+                    </div>
+                </div>
+                
+                <div id="reply12" class="media comment" data-user="九头蛇龙" data-user-nick="九头蛇龙" data-floor="12">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/snake_dragon">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FlymTX_l_c3dUC1nMD6yr3M63GhE.png" title="九头蛇龙" alt="九头蛇龙">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/snake_dragon">九头蛇龙</a>
+                            <span class="time">2014-12-02</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#11 @huandu  我对这个也不太清楚，但是我知道一点，那就是相对路径不能用在GOROOT和GOPATH的子目录里，如果是那种会将当前项目目录加入GOPATH的IDE，说不定会受影响。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply12" class="floor">12</a>
+                    </div>
+                </div>
+                
+                <div id="reply13" class="media comment" data-user="alpha" data-user-nick="alpha" data-floor="13">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/alpha">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FkgxA_ydYKCWhnVKSqBxKmIrZbUD.png" title="alpha" alt="alpha">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/alpha">alpha</a>
+                            <span class="time">2014-12-05</span>
+                        </div>
+                        <div class="markdown">
+                            <p>赞一个。。。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply13" class="floor">13</a>
+                    </div>
+                </div>
+                
+                <div id="reply14" class="media comment" data-user="luozi" data-user-nick="luozi" data-floor="14">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/luozi">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FkmTQ_cljie4VxGEjg0B6QF_-lc0.png" title="luozi" alt="luozi">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/luozi">luozi</a>
+                            <span class="time">2014-12-05</span>
+                        </div>
+                        <div class="markdown">
+                            <p>日志？ 没有日志这种东西么？</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply14" class="floor">14</a>
+                    </div>
+                </div>
+                
+                <div id="reply15" class="media comment" data-user="itfanr" data-user-nick="itfanr" data-floor="15">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/itfanr">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fu7ls_3WnOrhyG20OaYUQuvk2HkB.jpeg" title="itfanr" alt="itfanr">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/itfanr">itfanr</a>
+                            <span class="time">2014-12-06</span>
+                        </div>
+                        <div class="markdown">
+                            <p><code>go get golang.org/x/tools/cmd/goimports</code>这个命令不好用啊。没有反应。</p>
+
+<p>已经开启代理，golang.org官网可以打开。</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply15" class="floor">15</a>
+                    </div>
+                </div>
+                
+                <div id="reply16" class="media comment" data-user="itfanr" data-user-nick="itfanr" data-floor="16">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/itfanr">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fu7ls_3WnOrhyG20OaYUQuvk2HkB.jpeg" title="itfanr" alt="itfanr">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/itfanr">itfanr</a>
+                            <span class="time">2014-12-06</span>
+                        </div>
+                        <div class="markdown">
+                            <p>package golang.org/x/tools/cmd/goimports: unrecognized import path "golang.org/x/tools/cmd/goimports"</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply16" class="floor">16</a>
+                    </div>
+                </div>
+                
+                <div id="reply17" class="media comment" data-user="ggaaooppeenngg" data-user-nick="ggaaooppeenngg" data-floor="17">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/ggaaooppeenngg">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FsKf3DIFT7IAISfPAXA4doj7l72g.jpeg" title="ggaaooppeenngg" alt="ggaaooppeenngg">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/ggaaooppeenngg">ggaaooppeenngg</a>
+                            <span class="time">2014-12-07</span>
+                        </div>
+                        <div class="markdown">
+                            <p><a href="http://talks.golang.org/2014/names.slide#1" rel="nofollow">http://talks.golang.org/2014/names.slide#1</a></p>
+
+<p>这里面提到的命名规则其实也可以加进去.</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply17" class="floor">17</a>
+                    </div>
+                </div>
+                
+                <div id="reply18" class="media comment" data-user="astaxie" data-user-nick="astaxie" data-floor="18">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/astaxie">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FttABai3PedbIsozC34dlWw0WVUA.jpeg" title="astaxie" alt="astaxie">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/astaxie">astaxie</a>
+                            <span class="time">2014-12-07</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#17 @ggaaooppeenngg 好建议，我等会儿加进去</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply18" class="floor">18</a>
+                    </div>
+                </div>
+                
+                <div id="reply19" class="media comment" data-user="astaxie" data-user-nick="astaxie" data-floor="19">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/astaxie">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FttABai3PedbIsozC34dlWw0WVUA.jpeg" title="astaxie" alt="astaxie">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/astaxie">astaxie</a>
+                            <span class="time">2014-12-07</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#15 @itfanr 代理的不够彻底吗？我这边可以啊</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply19" class="floor">19</a>
+                    </div>
+                </div>
+                
+                <div id="reply20" class="media comment" data-user="九头蛇龙" data-user-nick="九头蛇龙" data-floor="20">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/snake_dragon">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FlymTX_l_c3dUC1nMD6yr3M63GhE.png" title="九头蛇龙" alt="九头蛇龙">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/snake_dragon">九头蛇龙</a>
+                            <span class="time">2014-12-08</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#19 @astaxie 
+我一直希望go能有类似块的概念（运行时类似无参量的函数，显式返回时会让其上层的函数返回），但是go没有，只能用panic和recover来实
+现，panic+defer/recover这个系统会不会对程序的执行带来不利影响，比如拖慢速度之类的？</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply20" class="floor">20</a>
+                    </div>
+                </div>
+                
+                <div id="reply21" class="media comment" data-user="andres" data-user-nick="andres" data-floor="21">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/roc-roc">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FoRcASu7v_HALfCxLDqawqkaBzCL.png" title="andres" alt="andres">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/roc-roc">andres</a>
+                            <span class="time">2014-12-10</span>
+                        </div>
+                        <div class="markdown">
+                            <p>good!</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply21" class="floor">21</a>
+                    </div>
+                </div>
+                
+                <div id="reply22" class="media comment" data-user="zeal" data-user-nick="zeal" data-floor="22">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/zeal">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FqTGIM7hTRfSiMqStokdMjVZ2jKx.jpeg" title="zeal" alt="zeal">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/zeal">zeal</a>
+                            <span class="time">2014-12-15</span>
+                        </div>
+                        <div class="markdown">
+                            <p>@astaxie 关于包的引用问题，个人有个疑惑，为什么排序不是从上到下，分别是官方包、第三方包、自己项目中的包呢？因为官方包和第三方包可以被视作对于第三方基础组件的依赖，我们的程序是基于他们的包来进行开发的，把自己的包放到这两种引用包之间，不觉得奇怪吗？</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply22" class="floor">22</a>
+                    </div>
+                </div>
+                
+                <div id="reply23" class="media comment" data-user="astaxie" data-user-nick="astaxie" data-floor="23">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/astaxie">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/FttABai3PedbIsozC34dlWw0WVUA.jpeg" title="astaxie" alt="astaxie">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/astaxie">astaxie</a>
+                            <span class="time">2014-12-24</span>
+                        </div>
+                        <div class="markdown">
+                            <p>#22 @zeal 从我的理解来说，我觉得第三方包是独立的一种包，属于依赖的包，而标准包和应用内包属于可控的</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply23" class="floor">23</a>
+                    </div>
+                </div>
+                
+                <div id="reply24" class="media comment" data-user="itfanr" data-user-nick="itfanr" data-floor="24">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/itfanr">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fu7ls_3WnOrhyG20OaYUQuvk2HkB.jpeg" title="itfanr" alt="itfanr">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/itfanr">itfanr</a>
+                            <span class="time">2014-12-27</span>
+                        </div>
+                        <div class="markdown">
+                            <p>package golang.org/x/tools/cmd/goimports: unrecognized import path "golang.org/x/tools/cmd/goimports"</p>
+
+<p>package golang.org/x/tools/cmd/vet: unrecognized import path "golang.org/x/tools/cmd/vet"</p>
+
+<p>一直是这样  哎</p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply24" class="floor">24</a>
+                    </div>
+                </div>
+                
+                <div id="reply25" class="media comment" data-user="makoshan" data-user-nick="makoshan" data-floor="25">
+                    <div class="media-left avatar">
+                        <a href="http://golanghome.com/user/makoshan">
+                            <img class="media-object" src="Go%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E6%8C%87%E5%8D%97_files/Fj6fWnMtz5IzXPBgqvOcgwDF5108.png" title="makoshan" alt="makoshan">
+                        </a>
+                    </div>
+                    <div class="media-body content">
+                        <div class="meta clearfix">
+                            <a href="http://golanghome.com/user/makoshan">makoshan</a>
+                            <span class="time">months_ago%!(EXTRA int=7)</span>
+                        </div>
+                        <div class="markdown">
+                            <p><code>学习了</code></p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <a href="#reply25" class="floor">25</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="post-new-comment">
+                
+                <div class="text-center">
+                    <a class="btn btn-info" href="http://golanghome.com/login?to=http%3a%2f%2fgolanghome.com/post/550">
+                        need_login_to_comment</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="col-md-2">
+
+    </div>
+</div>
+
+
+
+	    </div>
+	</div>
+	
+    <div id="footer">
+    <div class="container">
+        <table class="col-md-10 col-md-offset-1">
+            <tbody>
+            <tr>
+                <td align="left">
+                    Go友团(QQ群组: 297287115) | <a href="http://golanghome.com/about">关于</a> | <a href="http://golanghome.com/faq">FAQ</a>
+                </td>
+                <td align="right"><a href="http://www.miitbeian.gov.cn/">沪ICP备13014075号-2</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="return-top" title="">
+    <span class="s"></span>
+    <span class="b"></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body></html>
